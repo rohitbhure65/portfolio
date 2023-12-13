@@ -9,7 +9,7 @@ export const ProjectCard = ({ title, description, imgUrl,plink,altImg }) => {
           <h4>{title}</h4>
           <span>{description}</span>
           <br/>
-          <a href={plink} target="_blank" ><button className="plink" onClick={() => console.log('connect')}>Project Link <ArrowRightCircle size={25} /></button></a>
+          <a href={plink} target="_blank" rel="noreferrer"><button className="plink" onClick={() => console.log('connect')}>Project Link <ArrowRightCircle size={25} /></button></a>
         </div>
       </div>
     </Col>

@@ -12,7 +12,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Full Stack Web Developer", "UI/UX Designer", "MERN Developer", "Graphic Designer", "Freelancer", "Wordpress Developer", "Video Editor", "Blogger", "Youtuber" ];
-  const period = 2000;
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Rohit`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Web Developer", "UI/UX Designer", "MERN Developer", "Graphic Designer", "Freelancer", "Wordpress Developer", "Video Editor", "Blogger", "Youtube ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Rohit`} <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Full Stack Web Developer", "UI/UX Designer", "MERN Developer", "Graphic Designer", "Freelancer", "Wordpress Developer", "Video Editor", "Blogger", "Youtube ]'><span className="wrap">{text}</span></span></h1>
                   <p>A full stack Developer, a self-led learner, and a software enthusiast who loves to build products and team player. Besides Developing, I enjoy writing technical blogs I am a person with clear goals to achieve and will work for them no matter what</p>
                   <a href="https://www.instagram.com/rohitbhure65/"><button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button></a>
               </div>}
